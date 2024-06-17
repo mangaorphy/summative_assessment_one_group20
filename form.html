@@ -10,15 +10,24 @@
 <form id="registrationForm" onsubmit="validateForm(event)">
     <div class="form-group">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" placeholder="Name" name="firstName" required pattern="[A-Z][a-zA-Z]*" />
+        <input type="text" id="firstName" placeholder="Name" name="firstName"/>
+        <div class="error">
+
+        </div>
     </div>
     <div class="form-group">
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" />
+        <input type="text" id="lastName" name="lastName"/>
+        <div class="error">
+
+        </div>
     </div>
     <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
+        <div class="error">
+
+        </div>
     </div>
     <div class="form-group">
         <label>Subscription Preferences:</label>
@@ -37,7 +46,10 @@
     </div>
     <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$" />
+        <input type="password" id="password" name="password"/>
+        <div class="error">
+
+        </div>
     </div>
     <div class="form-group">
         <input type="submit" value="Register" />
