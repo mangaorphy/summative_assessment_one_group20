@@ -1,1 +1,108 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('https://t4.ftcdn.net/jpg/03/63/39/11/360_F_363391105_aksgy8xt3vyzPEMD1NI3cgekWtthlguC.jpg'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger font size */
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    background: linear-gradient(#007BFF, #0056b3); /* Gradient text effect */
+    -webkit-background-clip: text; /* For Webkit browsers */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* For Webkit browsers */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make labels bold */
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px; /* Increased padding for better touch targets on mobile */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* Adjust font size for better scaling */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px; /* Increased padding for better touch targets on mobile */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; /* Adjust font size for better scaling */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem; /* Adjust font size for better scaling */
+    margin-top: 5px;
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem; /* Adjust font size for better scaling */
+}
