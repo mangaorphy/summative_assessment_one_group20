@@ -106,3 +106,48 @@ button:hover {
     text-align: center;
     font-size: 1rem; /* Adjust font size for better scaling */
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px; /* Add padding for small screens */
+        height: auto;  /* Adjust height to auto for smaller screens */
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Ensure buttons are easily clickable on mobile */
+    }
+}
+
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Slightly smaller font size for medium screens */
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 600px; /* Increased max width for larger screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Maintain larger font size for readability */
+    }
+}
