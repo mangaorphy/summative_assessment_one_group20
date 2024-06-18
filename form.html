@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Subscription Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to Our Blog</h1>
+        <form id="subscriptionForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error" id="lastNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label>Subscription Preferences</label>
+                <label><input type="checkbox" name="subscription" value="Technology"> Technology</label>
+                <label><input type="checkbox" name="subscription" value="Health"> Health</label>
+                <label><input type="checkbox" name="subscription" value="Finance"> Finance</label>
+                <span class="error" id="subscriptionError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            Subscription successful!
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
